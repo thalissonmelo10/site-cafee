@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.estrutura-texto{
+
+align-items: center;
+font-size: larger;
+width: 1700px;
+height: 90px ;
+justify-items: center;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+border-radius: 2px;
+}
+
+.texto-banner{
+    font-size: 50px;
+    color: white;
+}
+
+.texto-diferente{
+    font-size: 15px;
+    color: beige;
+}
+
+.img-where{
+    height: 900px;
+    width: 2000px;
+}
+
+.banner-img{
+
+        height: 900px;
+        width: 1900px;
+        background-image: url("./assents/photo-1521017432531-fbd92d768814.jpg"); /* Ele adiciona uma imagem como fundo */
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 40px;
+        margin-top: 20px;
+        
+
+}
+
+.caixa-cores{
+
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin-top: -30px;
+
+}
+
+.section-banner{
+
+  display: flex;
+  justify-content: center;
+
+}
