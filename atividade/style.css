@@ -2,64 +2,345 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-}
-.estrutura-texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-align-items: center;
-font-size: larger;
-width: 1700px;
-height: 90px ;
-justify-items: center;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-border-radius: 2px;
 }
 
-.texto-banner{
-    font-size: 50px;
+.cbc {
+    background-color: #7a3611; 
+    color: white;
+    padding: 15px ;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.inicial {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.inicial a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cart-be {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #e67e22;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.banner-principal {
+    height: 800px;
+    background:  url('./assents/photo-1521017432531-fbd92d768814.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: white;
 }
 
-.texto-diferente{
-    font-size: 15px;
-    color: beige;
+.frase-banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
 }
 
-.img-where{
-    height: 900px;
-    width: 2000px;
+.frase-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 300;
 }
 
-.banner-img{
 
-        height: 900px;
-        width: 1900px;
-        background-image: url("./assents/photo-1521017432531-fbd92d768814.jpg"); /* Ele adiciona uma imagem como fundo */
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: 40px;
-        margin-top: 20px;
-        
-
+.btn-menu {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    
 }
 
-.caixa-cores{
-
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
-  margin-top: -30px;
-
+.section-np {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
 }
 
-.section-banner{
+.products-header h2 {
+    color: #7a3611; 
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
 
-  display: flex;
-  justify-content: center;
+.products-header p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e67e22;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.produtos-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.produtos-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.produtos-info {
+    padding: 20px;
+}
+
+.produtos-info h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.produtos-info p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.produtos-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #d35400; 
+}
+
+.btn-add {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    gap: 8px;
+}
+
+.sobre-nos {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.container-sobre {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sobre-header h2 {
+    color: #8b4513; 
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.sobre-header p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+}
+
+
+.sobre-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sobre-item {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-circle {
+    background-color: #fff8e1; 
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-circle i {
+    font-size: 1.8rem;
+    color: #d2691e; 
+}
+
+
+.sobre-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sobre-item p {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.4;
+    max-width: 250px;
+}
+
+
+@media (max-width: 768px) {
+    .sobre-grid {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.contacto {
+    background-color: #fdf6e3;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contacto-header h2 {
+    color: #8b4513;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.contacto-header p {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contacto-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.contacto-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.icon-circle-mini {
+    background-color: #fff8e1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icon-circle-mini i {
+    color: #d2691e;
+    font-size: 1.2rem;
+}
+
+
+.contacto-card h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contacto-card p {
+    font-size: 0.9rem;
+    color: #777;
+    line-height: 1.5;
+    margin: 0;
 }
